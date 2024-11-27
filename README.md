@@ -51,7 +51,7 @@ The backend API is also hosted on Render. The backend is responsible for process
 
 [Secret Santa Assigner - Backend](https://secret-santa-assigner.onrender.com/)
 
-##Docker Setup (Available in docker-setup Branch)
+## Docker Setup (Available in docker-setup Branch)
 
 Build and Run with Docker:
 Build the Docker images: From the root of the project, run the following command to build the Docker images for both frontend and backend:
