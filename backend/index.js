@@ -65,7 +65,7 @@ app.post('/assign-secret-santa',
     }
 });
 
-console.log(path.join(__dirname, "../frontend/dist")); // Check if the path is correct
+
 
 app.use(express.static(path.join(__dirname,"../frontend/dist")));
 app.get("*",(req,res)=>{
