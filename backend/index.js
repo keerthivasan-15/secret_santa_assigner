@@ -14,7 +14,7 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 // Configure CORS to allow requests from the frontend
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://secret-santa-assigner.onrender.com/',
   methods: ['POST'],
   allowedHeaders: ['Content-Type']
 }));
