@@ -39,6 +39,17 @@ Run the following command to start the server:
 
 The server will run on http://localhost:3000.
 
+## Frontend Deployment
+
+The frontend of this application is hosted on Render. You can access the web application at:
+
+[Secret Santa Assigner - Frontend](https://secret-santa-assigner.onrender.com/)
+
+## Backend Deployment
+
+The backend API is also hosted on Render. The backend is responsible for processing the uploaded employee list and generating Secret Santa assignments. It is accessible via the following URL:
+
+[Secret Santa Assigner - Backend](https://secret-santa-assigner.onrender.com/)
 
 ## API Endpoint
 
