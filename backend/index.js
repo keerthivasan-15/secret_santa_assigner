@@ -65,9 +65,11 @@ app.post('/assign-secret-santa',
     }
 });
 
-app.use(express.static(path.join(__dirname,"/frontend/dist")));
+console.log(path.join(__dirname, "../frontend/dist")); // Check if the path is correct
+
+app.use(express.static(path.join(__dirname,"../frontend/dist")));
 app.get("*",(req,res)=>{
-    res.sendFile(path.join(__dirname,"frontend","dist","index.html"));
+    res.sendFile(path.join(__dirname,"../frontend","dist","index.html"));
 });
 
 const PORT = process.env.PORT || 3000;
