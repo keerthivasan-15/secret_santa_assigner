@@ -51,17 +51,13 @@ The backend API is also hosted on Render. The backend is responsible for process
 
 [Secret Santa Assigner - Backend](https://secret-santa-assigner.onrender.com/)
 
-Docker Setup (Available in docker-setup Branch)
-If you prefer to run the application with Docker, follow these steps:
+##Docker Setup (Available in docker-setup Branch)
 
 Build and Run with Docker:
 Build the Docker images: From the root of the project, run the following command to build the Docker images for both frontend and backend:
 
-      ```bash
       docker-compose build
       Run the Docker containers: Use Docker Compose to start the backend and frontend services:
-
-      ```bash
       docker-compose up
       This will start both the frontend and backend, with the frontend accessible on http://localhost:8080 and the backend API running on http://localhost:3000.
 
@@ -76,7 +72,6 @@ Docker Compose is used to orchestrate the frontend and backend containers.
 Stopping the Containers:
 To stop the containers, use the following command:
 
-      ```bash
       docker-compose down
 
 ## API Endpoint
