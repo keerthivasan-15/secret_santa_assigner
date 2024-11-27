@@ -40,11 +40,31 @@ Run the following command to start the server:
 The server will run on http://localhost:3000.
 
 
-API Endpoint: /assign-secret-santa
-Method: POST
-Body: Form-data with the following files:
-currentYear: Excel file containing the list of employees for the current year.
-previousYear: (Optional) Excel file containing last year's Secret Santa assignments.
+## API Endpoint
+
+### **Endpoint**: `/assign-secret-santa`
+
+### **Method**: `POST`
+
+### **Request Body**:
+- **Type**: `Form-data`
+- **Fields**:
+  1. **`currentYear`** (Required):  
+     - An Excel file containing the list of employees for the current year.
+  2. **`previousYear`** (Optional):  
+     - An Excel file containing last year's Secret Santa assignments.
+
+### Example Request (Using Postman):
+1. Set the method to **POST**.
+2. Use the endpoint: `http://localhost:3000/assign-secret-santa`.
+3. In the **Body** tab, choose **form-data** and add the following files:
+   - `currentYear`: Upload the current year Excel file.
+   - `previousYear`: (Optional) Upload the previous year's Excel file.
+
+### Expected Response:
+- **Success** (200): An Excel file containing the Secret Santa assignments is downloaded.
+- **Error** (400/500): JSON object with an error message.
+
 
 
 
