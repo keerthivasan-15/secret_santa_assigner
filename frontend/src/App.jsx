@@ -28,7 +28,7 @@ export function App() {
     }
 
     try {
-      const response = await fetch('https://secret-santa-assigner.onrender.com/assign-secret-santa', {
+      const response = await fetch('http://localhost:3000/assign-secret-santa', {
         method: 'POST',
         body: formData,
       });

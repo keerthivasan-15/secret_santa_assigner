@@ -14,10 +14,11 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 // Configure CORS to allow requests from the frontend
 app.use(cors({
-  origin: 'https://secret-santa-assigner.onrender.com/',
-  methods: ['POST'],
+  origin: 'http://localhost:8080',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type']
 }));
+
 
 app.post('/assign-secret-santa', 
   upload.fields([
